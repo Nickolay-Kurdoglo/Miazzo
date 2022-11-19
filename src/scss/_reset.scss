@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $f_primary;
+
+    &::selection {
+        color: #fff;
+        background-color: $c-primary;
+    }
+}
+
+html {
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    height: -webkit-fill-available;
+    position: relative;
+    z-index: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+button {
+    border: none;
+}
+
+button,
+input {
+    outline: none;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: black;
+}

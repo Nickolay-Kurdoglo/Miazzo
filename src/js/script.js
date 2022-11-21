@@ -1,24 +1,8 @@
-import { DropdownComponent } from "./components/dropdown.js";
-
-import { HeaderComponent } from "./components/header.component.js";
-
 import { ModalComponent } from "./components/modal.component.js";
 
-import {CategoryTabsComponent} from "./components/category-tabs.component.js";
+import { TextFieldComponent } from "./components/text_field.component.js";
 
-let $header = '';
-
-try {
-    new DropdownComponent(".dropdown")
-} catch {
-
-}
-
-try {
-    $header = new HeaderComponent("#header");
-} catch {
-
-}
+import { CounterComponent } from "./components/counter.component.js";
 
 try {
     new ModalComponent("#modal");
@@ -27,7 +11,13 @@ try {
 }
 
 try {
-    new CategoryTabsComponent("#categories")
+    new TextFieldComponent(".text_field")
+} catch {
+
+}
+
+try {
+    new CounterComponent(".counter")
 } catch {
 
 }

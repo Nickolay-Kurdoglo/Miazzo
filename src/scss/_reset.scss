@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $f_primary;
+    color: $c-800-gray;
 
     &::selection {
         color: #fff;
         background-color: $c-primary;
+    }
+
+    &::placeholder {
+        @include text_style(14px, 400, 16px);
+        font-family: $f_primary;
     }
 }
 
@@ -31,17 +37,35 @@ a {
     color: #000000;
 }
 
-button {
-    border: none;
+button,
+input[type="checkbox"],
+input[type="radiobutton"] {
+    cursor: pointer;
 }
 
 button,
 input {
+    border: none;
     outline: none;
 }
 
 svg {
     width: 24px;
     height: 24px;
-    fill: black;
+    fill: $c-800-gray;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }

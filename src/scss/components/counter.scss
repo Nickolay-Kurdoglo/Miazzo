@@ -1,0 +1,24 @@
+.counter {
+    display: inline-flex;
+    align-items: center;
+
+    .count {
+        max-width: 64px;
+        width: 24px;
+        text-align: center;
+        height: 24px;
+        margin: 0 16px;
+        background-color: #ffffff00;
+        @include text_style(12px, 700, 24px);
+
+        
+    }
+
+    .increase,
+    .decrease {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $c-100-gray;
+    }
+}

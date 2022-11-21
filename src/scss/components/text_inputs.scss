@@ -1,0 +1,42 @@
+.text_field {
+    &-label {
+        margin: 0 0 8px 0;
+        color: $c-400-gray;
+    }
+
+    &-container {
+        position: relative;
+    }
+
+    .icon {
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .leading_icon {
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .trailing_icon {
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &-input {
+        width: 100%;
+        padding: 12px 44px;
+        border-radius: 6px;
+        background: #FCFCFC;
+        border: 1px solid #E1E1E1;
+        @include text_style(14px, 400, 16px);
+        font-family: $f_primary;
+        transition: border .2s;
+
+        &:focus {
+            border: 1px solid $c-600-gray;
+        }
+    }
+}

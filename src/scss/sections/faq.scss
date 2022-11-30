@@ -1,0 +1,15 @@
+.faq {
+    .t-h2 {
+        margin: 0 0 32px 0;
+    }
+
+    .wrapper {
+        width: min(824px, calc(100% - 16px));
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

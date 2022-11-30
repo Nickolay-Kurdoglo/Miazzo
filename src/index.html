@@ -7,8 +7,48 @@
 
 <body>
 
-    @@include("html/UI.html", {})    
+    @@include("html/header.html", {})
 
+    <a class="constructor-link" href="#">
+        <svg class="icon-text">
+            <use xlink:href="img/sprite.svg#constructor-text"></use>
+        </svg>
+        <svg class="icon">
+            <use xlink:href="img/sprite.svg#constructor"></use>
+        </svg>
+    </a>
+
+
+    @@include("html/sections/offer.html", {})
+
+    <!-- @@include("html/UI.html", {}) -->
+
+    <section class="goods-section section-margin">
+        @@include("html/sections/goods_row.html", {
+            "productName": "Популярное"
+        })
+    
+        @@include("html/sections/goods_row.html", {
+            "productName": "Все"
+        })
+        
+        @@include("html/sections/goods_row.html", {
+            "productName": "Шторы"
+        })
+    
+        @@include("html/sections/goods_row.html", {
+            "productName": "Тюли"
+        })
+    </section>
+
+    @@include("html/sections/reviews.html", {})
+
+    @@include("html/sections/FAQ.html", {})
+    
+
+    @@include("html/footer.html", {})
+
+    
     <script src="js/script.min.js"></script>
 </body>
 

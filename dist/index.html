@@ -19,159 +19,1083 @@
 
 <body>
 
-    <div class="ui-elements">
-    <h1 class="t-h1">UI Kit - Miazzo</h1>
-
-    <div class="section">
-        <h1 class="t-h1">H1 heading</h1>
-        <h2 class="t-h2">H2 heading</h2>
-        <h3 class="t-h3">H3 heading</h3>
-        <h4 class="t-h4">H4 heading</h4>
-        <h5 class="t-h5">H5 heading</h5>
-        <h6 class="t-h6">H6 heading</h6>
-        <p class="t-p">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Подпоясал,
-            то толку. Единственное подпоясал снова продолжил имеет меня родного составитель ведущими бросил предложения
-            знаках строчка заглавных, большого реторический пор алфавит дорогу рукописи страна эта сбить силуэт своего
-            дороге. Напоивший!</p>
-        <span class="t-caption">Подпись</span>
-
+    <header class="header">
+    <div class="header__top">
+        <div class="wrapper">
+            <ul class="header__additiontal-info">
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Возврат</a></li>
+            </ul>
+            <ul class="">
+                <li><a href="mailto:miazzo@mail.ru">miazzo@mail.ru</a></li>
+                <li></li>
+            </ul>
+        </div>
     </div>
-
-    <div class="section">
-        <svg class="icon">
-            <use xlink:href="img/sprite.svg#location"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#mail"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#minus"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#phone"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#plus"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#search"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#search-1"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#smartphone"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#star"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#time"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#user"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#width"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#burger"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#cart"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#category"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#chevron-left"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#chevron-right"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#comment"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#constructor"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#copy link"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#copy"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#edit"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#filter"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#heart small"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#heart"></use>
-        </svg><svg class="icon">
-            <use xlink:href="img/sprite.svg#height"></use>
-        </svg>
-    </div>
-
-    <div class="section">
-        <button class="btn">
-            Click me
-        </button>
-        <button class="btn btn_secondary">
-            Click me
-        </button>
-    </div>
-
-    <div class="section">
-        <div class="text_field">
-            <label for="" class="text_field-label t-label">Label</label>
-            <div class="text_field-container">
-                <svg class="leading_icon icon">
-                    <use xlink:href="img/sprite.svg#search"></use>
-                </svg>
-                <input type="text" placeholder="Type text" class="text_field-input">
-                <svg class="trailing_icon icon js-remove-text">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
+    <div class="header__main">
+        <div class="wrapper">
+            <img class="header__logo" src="img/MIAZZO.svg" alt="">
+            <div class="header__search-bar text_field">
+                <div class="text_field-container">
+                    <svg class="leading_icon icon">
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                    <input type="text" placeholder="Что ищем сегодня ?" class="text_field-input icon-margin">
+                    <svg class="trailing_icon icon js-remove-text">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="header__customer-bar">
+                <a class="header__favorite-btn" href="#">
+                    <span class="goods-count">4</span>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="t-caption">Избранное</span>
+                </a>
+                <a class="header__cart-btn" href="#">
+                    <span class="goods-count">7</span>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+                    <span class="t-caption">Корзина</span>
+                </a>
+                <a class="header__profile-btn" href="#">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#user"></use>
+                    </svg>
+                    <span class="t-caption">Профиль</span>
+                </a>
             </div>
         </div>
     </div>
+    <div class="header__bottom">
+        <div class="wrapper">
+            <div class="header__catalog">
+                <button class="btn js-catalog-btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#category"></use>
+                    </svg>
+                    <span class="t-h6">Каталог</span>
+                </button>
+                <div class="catalog">
 
-    <div class="section">
-        <label class="choice_element" for="checkbox_01">
-            <input id="checkbox_01" class="choice_element-input" type="checkbox">
-            <svg class="check_mark icon">
-                <use xlink:href="img/sprite.svg#check_mark"></use>
-            </svg>
-            <span class="t-label choice_element-label">Label</span>
-        </label>
+                </div>
+            </div>
+            <nav class="header__navigation">
+                <ul class="nav-container">
+                    <li><a class="nav-link t-nav" href="#">Главная</a></li>
+                    <li><a class="nav-link t-nav" href="#">Контакты</a></li>
+                    <li><a class="nav-link t-nav" href="#">О нас</a></li>
+                    <li><a class="nav-link t-nav" href="#">Статьи</a></li>
+                </ul>
+            </nav>
+            <div class="header__number">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <a class="number" href="tel:+74959613048 ">+7 495 961 30 48 </a>
+            </div>
+        </div>
     </div>
+</header>
 
-    <div class="section">
-        <ul>
+    <a class="constructor-link" href="#">
+        <svg class="icon-text">
+            <use xlink:href="img/sprite.svg#constructor-text"></use>
+        </svg>
+        <svg class="icon">
+            <use xlink:href="img/sprite.svg#constructor"></use>
+        </svg>
+    </a>
+
+
+    <section class="offer">
+    <div class="wrapper">
+
+    </div>
+    <img class="offer__bg" src="img/offer.png" alt="">
+</section>
+
+    
+
+    <section class="goods-section section-margin">
+        <section class="goods-row">
+    <div class="wrapper">
+        <div class="goods-row__header">
+            <h2 class="t-h2">Популярное</h2>
+            <a class="t-link" href="category.html">показать все</a>
+        </div>
+        <ul class="goods__list">
             <li>
-                <label class="choice_element" for="radio_01">
-                    <input id="radio_01" name="UI_KIT" class="choice_element-input" type="radio">
-                    <div class="check_mark"></div>
-                    <span class="t-label choice_element-label">Label</span>
-                </label>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/black.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
             </li>
+
             <li>
-                <label class="choice_element" for="radio_02">
-                    <input id="radio_02" name="UI_KIT" class="choice_element-input" type="radio">
-                    <div class="check_mark"></div>
-                    <span class="t-label choice_element-label">Label</span>
-                </label>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/blue.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
             </li>
+
             <li>
-                <label class="choice_element" for="radio_03">
-                    <input id="radio_03" name="UI_KIT" class="choice_element-input" type="radio">
-                    <div class="check_mark"></div>
-                    <span class="t-label choice_element-label">Label</span>
-                </label>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/for kitchen.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
             </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/light green.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/textured gray.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
         </ul>
     </div>
+</section>
+    
+        <section class="goods-row">
+    <div class="wrapper">
+        <div class="goods-row__header">
+            <h2 class="t-h2">Все</h2>
+            <a class="t-link" href="category.html">показать все</a>
+        </div>
+        <ul class="goods__list">
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/black.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
 
-    <div class="section">
-        <div class="counter">
-            <button class="decrease">
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/blue.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/for kitchen.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/light green.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/textured gray.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+        
+        <section class="goods-row">
+    <div class="wrapper">
+        <div class="goods-row__header">
+            <h2 class="t-h2">Шторы</h2>
+            <a class="t-link" href="category.html">показать все</a>
+        </div>
+        <ul class="goods__list">
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/black.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/blue.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/for kitchen.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/light green.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/textured gray.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+    
+        <section class="goods-row">
+    <div class="wrapper">
+        <div class="goods-row__header">
+            <h2 class="t-h2">Тюли</h2>
+            <a class="t-link" href="category.html">показать все</a>
+        </div>
+        <ul class="goods__list">
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/black.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/blue.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/for kitchen.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/light green.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-card liked">
+                    <a class="product-card__link" href="#">
+                        <!--Направлять на страницу товара при клике-->
+                    </a>
+                    <div class="product-card__preview">
+                        <img class="product-card__img" src="img/product_images/textured gray.png" alt="">
+                        <button class="add-to-fav">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card__name">
+                        Шторы / портьеры блэкаут мрамор рогожка
+                    </p>
+                    <div class="product-card__info">
+                        <div class="product-card__rate">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#s-star"></use>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product-card__reviews">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#comment"></use>
+                            </svg>
+                            <span>23</span>
+                        </div>
+                    </div>
+                    <div class="product-card__footer">
+                        <span class="product-card__price t-product-card__price">2560</span>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+    </section>
+
+    <section class="reviews section-margin">
+    <div class="wrapper">
+        <p class="t-h2 t-center">Отзывы</p>
+        <div class="reviews__container">
+            <button class="js-scroll-left">
                 <svg class="icon">
-                    <use xlink:href="img/sprite.svg#minus"></use>
+                    <use xlink:href="img/sprite.svg#chevron-left"></use>
                 </svg>
             </button>
-            <input class="count" type="number" value="1">
-            <button class="increase">
+
+            <ul class="reviews__list">
+                <li class="reviews__item">
+                    <img class="review__img" src="img/common_reviews/review_1.png" alt="">
+                </li>
+                <li class="reviews__item">
+                    <img class="review__img" src="img/common_reviews/review_2.png" alt="">
+                </li>
+                <li class="reviews__item">
+                    <img class="review__img" src="img/common_reviews/review_3.png" alt="">
+                </li>
+            </ul>
+
+            <button class="js-scroll-right">
                 <svg class="icon">
-                    <use xlink:href="img/sprite.svg#plus"></use>
+                    <use xlink:href="img/sprite.svg#chevron-right"></use>
                 </svg>
             </button>
         </div>
     </div>
-</div>    
+</section>
 
+    <section class="faq section-margin">
+    <div class="wrapper">
+        <p class="t-h2 t-center">
+            Часто задаваемые вопросы
+        </p>
+        <div class="faq__list accordion-list">
+            <div class="accordion open">
+                <button class="accordion-header">
+                    <h2 class="t-h6 accordion-heading">Зачем нужны шторы блэкаут ?</h2>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#chevron-right"></use>
+                    </svg>
+                </button>
+                <div class="t-p answer">
+                    <p>
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                        Жаренные снова повстречался букв путь на берегу, реторический агентство проектах рыбного!
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-header">
+                    <h2 class="t-h6 accordion-heading">Шторы из негорючей ткани</h2>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#chevron-right"></use>
+                    </svg>
+                </button>
+                <div class="t-p answer">
+                    <p>
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                        Жаренные снова повстречался букв путь на берегу, реторический агентство проектах рыбного!
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-header">
+                    <h2 class="t-h6 accordion-heading">Способы крепления штор</h2>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#chevron-right"></use>
+                    </svg>
+                </button>
+                <div class="t-p answer">
+                    <p>
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                        Жаренные снова повстречался букв путь на берегу, реторический агентство проектах рыбного!
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-header">
+                    <h2 class="t-h6 accordion-heading">Как крепить мини рулонные шторы?</h2>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#chevron-right"></use>
+                    </svg>
+                </button>
+                <div class="t-p answer">
+                    <p>
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                        Жаренные снова повстречался букв путь на берегу, реторический агентство проектах рыбного!
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-header">
+                    <h2 class="t-h6 accordion-heading">Где купить занавески в Москве?</h2>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#chevron-right"></use>
+                    </svg>
+                </button>
+                <div class="t-p answer">
+                    <p>
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                        Жаренные снова повстречался букв путь на берегу, реторический агентство проектах рыбного!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    
+
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer__catalog">
+            <p class="t-h5 footer__section">Каталог</p>
+            <div class="footer__dividing-line"></div>
+            <ul class="catalog-list">
+                <li><a href="#" class="catalog-link t-nav">Все</a></li>
+                <li><a href="#" class="catalog-link t-nav">Новинки</a></li>
+                <li><a href="#" class="catalog-link t-nav">Акции</a></li>
+                <li><a href="#" class="catalog-link t-nav">Шторы</a></li>
+                <li><a href="#" class="catalog-link t-nav">Тюль</a></li>
+                <li><a href="#" class="catalog-link t-nav">Портьеры</a></li>
+                <li><a href="#" class="catalog-link t-nav">Римские шторы</a></li>
+            </ul>
+        </div>
+        <nav class="footer__nav">
+            <p class="t-h5 footer__section">Навигация</p>
+            <div class="footer__dividing-line"></div>
+            <ul class="nav__container">
+                <li><a href="#" class="footer__link t-nav">Главная</a></li>
+                <li><a href="#" class="footer__link t-nav">Контакты</a></li>
+                <li><a href="#" class="footer__link t-nav">О нас</a></li>
+                <li><a href="#" class="footer__link t-nav">Статьи</a></li>
+                <li><a href="#" class="footer__link t-nav">Доставка</a></li>
+                <li><a href="#" class="footer__link t-nav">Возврат</a></li>
+            </ul>
+        </nav>
+        <div class="footer__contacts">
+            <p class="t-h5 footer__section">Контакты</p>
+            <div class="footer__dividing-line"></div>
+            <div class="footer__mail">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+                <a class="t-small " href="mailto:miazzo@mail.ru">miazzo@mail.ru</a>
+            </div>
+            <div class="footer__phone">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <a class="t-small number" href="tel:+74959613048 ">+7 495 961 30 48 </a>
+            </div>
+            <div class="footer__mail">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+                <a href="#" class="t-small location">Метро Такое-то, ул. Такая-то, дом Такой-то, стр. такое-то</a>
+            </div>
+            <div class="footer__time">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#time"></use>
+                </svg>
+                <span class="t-small time">
+                    Будни: <b>9:00 - 20:00</b>
+                    Выходные: <b>10:00 - 19:00</b>
+                </span>
+            </div>
+        </div>
+        <div class="footer__additional">
+            <div class="logo">
+                <img class="header__logo" src="img/MIAZZO.svg" alt="">
+            </div>
+            <button class="btn">Связаться с нами</button>
+            <a href="#" class="privacy-policy t-small">Политика конфиденциальности</a>
+            <p class="copyright t-small">
+                © Интернет-магазин “MIAZZO”. 2022
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+    
     <script src="js/script.min.js"></script>
 </body>
 

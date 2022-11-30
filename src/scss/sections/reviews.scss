@@ -1,0 +1,36 @@
+.reviews {
+
+    .t-h2 {
+        margin: 0 0 32px 0;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: 24px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        width: 340px;
+        height: 200px;
+        position: relative;
+        border-radius: 24px;
+        overflow: hidden;
+
+        box-shadow: $s-card;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+    }
+}

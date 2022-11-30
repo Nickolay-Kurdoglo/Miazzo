@@ -1,14 +1,17 @@
-@import "mixins";                   // Миксины
+@import "mixins"; // Миксины
 
-@import "variables";                // Переменные
+@import "variables"; // Переменные
 
-@import "reset";                    // Обнуленние стилей
+@import "reset"; // Обнуленние стилей
 
-@import "fonts";                    // Подключение шрифтов
+@import "fonts"; // Подключение шрифтов
 
-@import "typography";               // Текстовые стили
+@import "typography"; // Текстовые стили
 
-@import "components.scss";          // Компоненты
+@import "components.scss"; // Компоненты
+
+@import "sections.scss"; // Блоки сайта
+
 
 .ui-elements {
     padding: 64px;
@@ -19,7 +22,91 @@
 
     .section {
         padding: 64px;
-        width: 70%;
+        width: 1;
         background-color: #f7f7f7;
+        border: 1px solid gray;
     }
 }
+
+.wrapper {
+    width: min(1328px, calc(100% - 16px));
+    margin: 0 auto;
+}
+
+.section-margin {
+    margin: 128px 0;
+}
+
+.constructor-link {
+    left: 5vw;
+    bottom: 8vh;
+    position: fixed;
+    z-index: 100;
+    display: block;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $c-primary;
+    box-shadow: 0px 4px 14px rgba(220, 132, 132, 0.84);
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: $c-btn-primary;
+    }
+
+    .icon-text {
+        fill: white;
+        width: 88px;
+        height: 88px;
+
+        animation: {
+            name: rotation-constructor;
+            duration: 10s;
+            timing-function: linear;
+            fill-mode: forwards;
+            iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes rotation-constructor {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// input[type=range] {
+//     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+//     width: 100%; /* Specific width is required for Firefox. */
+//     background: transparent; /* Otherwise white in Chrome */
+//   }
+  
+//   input[type=range]::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//   }
+  
+//   input[type=range]:focus {
+//     outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+//   }
+  
+//   input[type=range]::-ms-track {
+//     width: 100%;
+//     cursor: pointer;
+  
+//     /* Hides the slider so custom styles can be added */
+//     background: transparent; 
+//     border-color: transparent;
+//     color: transparent;
+//   }

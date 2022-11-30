@@ -7,8 +7,6 @@ export class TextFieldComponent extends Component {
 
     init() {
 
-        console.log(this.$el);
-
         const textInput = this.$el.querySelector(".text_field-input");
         const removeTextBtn = this.$el.querySelector(".js-remove-text");
 

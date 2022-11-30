@@ -1,0 +1,21 @@
+.breadcrumbs {
+    margin: 32px 0 40px 0;
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        @extend .t-breadcrumb;
+    }
+
+    &__item:not(:last-child) &__link::after {
+        content: "·";
+        font-weight: 600;
+        margin: 0 8px;
+    }
+
+    &__item:last-child &__link {
+        color: $c-primary;
+    }
+}

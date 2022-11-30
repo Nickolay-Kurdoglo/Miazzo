@@ -25,6 +25,7 @@ body {
     overflow-x: hidden;
     height: -webkit-fill-available;
     position: relative;
+    background-color: $c-body;
     z-index: 0;
 }
 
@@ -47,6 +48,7 @@ button,
 input {
     border: none;
     outline: none;
+    background-color: #ffffff00;
 }
 
 svg {

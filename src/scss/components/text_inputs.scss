@@ -17,23 +17,29 @@
         left: 12px;
         top: 50%;
         transform: translateY(-50%);
+        fill: $c-primary;
     }
 
     .trailing_icon {
         right: 12px;
         top: 50%;
         transform: translateY(-50%);
+        fill: $c-600-gray;
     }
 
     &-input {
         width: 100%;
-        padding: 12px 44px;
+        padding: 16px;
         border-radius: 6px;
         background: #FCFCFC;
         border: 1px solid #E1E1E1;
         @include text_style(14px, 400, 16px);
         font-family: $f_primary;
         transition: border .2s;
+
+        &.icon-margin {
+            padding: 16px 44px;
+        }
 
         &:focus {
             border: 1px solid $c-600-gray;

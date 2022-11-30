@@ -51,6 +51,19 @@
         background-color: $c-primary;
     }
 
+    &.color-choise .check_mark {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid $c-filter-bg;
+        box-shadow: 0 0 0 1px $c-200-gray;
+    }
+
+    &.color-choise &-input:checked~.check_mark {
+        border: 2px solid $c-filter-bg;
+        box-shadow: 0 0 0 1px $c-primary;
+    }
+
     &-input:checked~&-label {
         color: $c-700-gray;
     }

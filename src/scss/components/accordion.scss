@@ -1,0 +1,32 @@
+.accordion {
+    border-radius: 16px;
+    border: 1px solid $c-100-gray;
+    background-color: #fff;
+    overflow: hidden;
+
+    &.open {
+
+        .answer {
+            display: block;
+        }
+
+        .icon {
+            transition: .2s;
+            transform: rotate(90deg);
+        }
+    }
+
+    &-header {
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .answer {
+        padding: 0 16px 16px 16px;
+        display: none;
+        color: $c-600-gray;
+    }
+}

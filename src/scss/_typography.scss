@@ -53,11 +53,23 @@
     @include text_style(12px, 500, 165%);
 }
 
-.t-nav {
-    @include text_style(14px, 500, 24px);
+.t-nav, .t-small {
+    @include text_style(14px, 300, 24px);
 }
 
-.t-label {
+.t-breadcrumb {
+    @include text_style(12px, 400, 16px);
+}
+
+.t-label, .t-product-card__name, .t-pagination-link {
     @include text_style(14px, 500, 16px);
     display: block;
+}
+
+.t-product-card__price {
+    @include text_style(16px, 600, 24px);
+}
+
+.t-center {
+    text-align: center;
 }

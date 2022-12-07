@@ -1,0 +1,59 @@
+.contacts {
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 80px;
+    }
+
+    &__info {
+        flex: 4 1 320px;
+
+        .t-h2 {
+            margin: 0 0 24px 0;
+        }
+    }
+
+    &__info-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__phone,
+    &__mail,
+    &__location,
+    &__work-time {
+        display: flex;
+        gap: 8px;
+
+        .t-label, .t-label b {
+            margin: 3px 0 0 0;
+            color: $c-600-gray;
+        }
+    }
+
+    &__form {
+        flex: 1 1 368px;
+    }
+
+    &__form, &__form form {
+        display: flex;
+        flex-direction: column;
+
+        > .t-label {
+            margin: 8px 0 24px 0;
+        }
+
+        .t-label {
+            color: $c-200-gray;
+        }
+
+        .text_field:not(:first-child) {
+            margin: 16px 0 0 0;
+        }
+
+        .btn {
+            margin: 16px 0 8px 0;
+        }
+    }
+}

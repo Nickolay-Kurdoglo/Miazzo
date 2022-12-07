@@ -7,15 +7,17 @@
 
     &__link {
         @extend .t-breadcrumb;
+        color: $c-primary;
     }
 
     &__item:not(:last-child) &__link::after {
         content: "·";
         font-weight: 600;
         margin: 0 8px;
+        color: $c-700-gray;
     }
 
     &__item:last-child &__link {
-        color: $c-primary;
+        color: $c-700-gray;
     }
 }

@@ -9,10 +9,14 @@ export class CounterComponent extends Component {
 
         this.$el.addEventListener("click", event => {
 
-            if (event.target.parentNode.classList.contains("increase")) {
-                console.log();
+            const $count = this.$el.querySelector(".count");
 
-                this.$el.querySelector(".count").value++
+            if (event.target.parentNode.classList.contains("increase")) {
+                $count.value++
+            }
+
+            if ($count.value > 1 && event.target.parentNode.classList.contains("decrease")) {
+                $count.value--
             }
         });
 

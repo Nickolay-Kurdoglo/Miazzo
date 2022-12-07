@@ -1,0 +1,17 @@
+.gallery_carousel {
+    // .splide-gallery {
+    //     border-radius: 16px;
+    //     overflow: hidden;
+    // }
+
+    .gallery__slide {
+        width: 100%;
+        height: 544px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

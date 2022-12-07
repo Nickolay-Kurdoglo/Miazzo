@@ -1,0 +1,32 @@
+.singIn {
+    .wrapper {
+        width: min(100% - 16px, 512px);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 16px;
+        padding: 16px 40px 24px;
+        background-color: #fff;
+        border: 1px solid $c-100-gray;
+
+        .t-h2 {
+            margin: 0 0 16px 0;
+        }
+
+        .icon {
+            fill: $c-700-gray;
+        }
+
+        .sing_in_link {
+            color: $c-400-gray;
+            
+            a {
+                color: $c-400-gray;
+                text-decoration: underline;
+            }
+        }
+    }
+}

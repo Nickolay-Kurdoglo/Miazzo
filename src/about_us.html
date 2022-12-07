@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "О нас"
+})
+
+<body>
+
+    <!-- @@include("html/header.html", {}) -->
+
+    <section class="breadcrumbs">
+        <div class="wrapper">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">О нас</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="wrapper">
+            <div class="about-us__description">
+                <h2 class="t-h2">MIAZZO</h2>
+                <p class="t-p">Принимая во внимание показатели успешности, семантический разбор внешних противодействий
+                    не оставляет шанса для системы обучения кадров, соответствующей насущным потребностям! Наше дело не
+                    так однозначно, как может показаться: базовый вектор развития, а также свежий взгляд на привычные
+                    вещи — безусловно открывает новые горизонты для новых предложений. В рамках спецификации современных
+                    стандартов, активно развивающиеся страны третьего мира представляют собой не что иное, как
+                    квинтэссенцию победы маркетинга над разумом и должны быть подвергнуты целой серии независимых
+                    исследований. Для современного мира внедрение современных методик обеспечивает актуальность
+                    экономической целесообразности принимаемых решений.</p>
+            </div>
+            <div class="about-us__photo">
+                <img src="@img/about_us/photo_about-us.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits section-margin">
+        <div class="wrapper">
+            <p class="t-h2">Наши преимущества</p>
+            <ul class="benefits__list">
+                <li class="benefits__item">
+                    <img src="@img/benefits_icon/sewing-machine.svg" alt="" class="benefits__icon">
+                    <p class="benefits__text">Собственная фабрика</p>
+                </li>
+
+                <li class="benefits__item">
+                    <img src="@img/benefits_icon/fabric.svg" alt="" class="benefits__icon">
+                    <p class="benefits__text">Качественные материалы</p>
+                </li>
+
+                <li class="benefits__item">
+                    <img src="@img/benefits_icon/fabric_2.svg" alt="" class="benefits__icon">
+                    <p class="benefits__text">Широкий ассортимент</p>
+                </li>
+
+                <li class="benefits__item">
+                    <img src="@img/benefits_icon/free-icon-individual.svg" alt="" class="benefits__icon">
+                    <p class="benefits__text">Идивидуальный поход</p>
+                </li>
+
+                <li class="benefits__item">
+                    <img src="@img/benefits_icon/years.svg" alt="" class="benefits__icon">
+                    <p class="benefits__text">20 лет на рынке</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gallery_carousel">
+        <div class="wrapper">
+
+            <div class="splide" id="gallery-splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="@img/about_us/photo_carousel.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="@img/about_us/photo_carousel.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    @@include("html/sections/reviews.html", {})
+
+    <section class="location section-margin">
+        <div class="wrapper">
+            <p class="t-h2">Где мы находимся</p>
+        </div>
+        <div class="location__map">
+            <img src="@img/map.png" alt="">
+        </div>
+    </section>
+
+    @@include("html/footer.html", {})
+
+    <script defer src="files/fslightbox/fslightbox.js"></script>
+
+    <script defer src="files/splide/js/splide.min.js"></script>
+
+    <script defer src="js/script.min.js"></script>
+</body>
+
+</html>

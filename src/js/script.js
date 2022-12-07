@@ -12,6 +12,10 @@ import { AccordionComponent } from "./components/accordion.component.js";
 
 import { FilterComponent } from "./components/filters.component.js";
 
+import { ProductComponent } from "./components/product.component.js";
+
+import { ChangeParamComponent } from "./components/change_param.component.js";
+
 try {
     new ModalComponent("#modal");
 } catch {
@@ -19,38 +23,66 @@ try {
 }
 
 try {
-    new TextFieldComponent(".text_field")
+    new TextFieldComponent(".text_field");
 } catch {
 
 }
 
 try {
-    new CounterComponent(".counter")
+    new CounterComponent(".counter");
 } catch {
 
 }
 
 try {
-    new OrderDataComponent(".order_data")
+    new OrderDataComponent(".order_data");
 } catch {
 
 }
 
 try {
-    new HeaderComponent(".header")
+    new HeaderComponent(".header");
 } catch {
 
 }
 
 try {
-    new AccordionComponent(".accordion-list")
+    new AccordionComponent(".accordion-list");
 } catch {
 
 }
 
+try {
+    new FilterComponent(".js-filters");
+} catch {
+
+}
 
 try {
-    new FilterComponent(".js-filters")
+    new ProductComponent(".product");
+} catch {
+
+}
+
+try {
+    new ChangeParamComponent(".change_parameters");
+} catch {
+
+}
+
+try {
+    document.addEventListener('DOMContentLoaded', function () {
+        // var splideProduct = new Splide('#splide-product', {
+        //     autoWidth: true
+        // });
+        // splideProduct.mount();
+
+        var elms = Array.from(document.getElementsByClassName( 'splide' ));
+
+        elms.forEach((item, index) => {
+            new Splide(item).mount();
+        });
+    });
 } catch {
 
 }

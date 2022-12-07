@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "Войти"
+})
+
+<body>
+
+    @@include("html/header.html", {})
+
+    <section class="breadcrumbs">
+        <div class="wrapper">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Войти</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="singIn">
+        <div class="wrapper">
+            <div class="singIn__container">
+                <p class="t-h2 t-center">Войти</p>
+                <div class="text_field">
+                    <label for="" class="text_field-label t-label">Почта</label>
+                    <div class="text_field-container">
+                        <svg class="leading_icon icon">
+                            <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg>
+                        <input type="text" placeholder="Ваше имя" class="text_field-input icon-margin">
+                    </div>
+                </div>
+                <div class="text_field">
+                    <label for="" class="text_field-label t-label">Ваш пароль</label>
+                    <div class="text_field-container">
+                        <svg class="leading_icon icon">
+                            <use xlink:href="img/sprite.svg#key"></use>
+                        </svg>
+                        <input type="text" placeholder="Ваш пароль" class="text_field-input icon-margin">
+                    </div>
+                </div>
+                <button class="btn">
+                    Войти
+                </button>
+                <p class="t-label sing_in_link">
+                    Нет аккаунта? <a href="sing_up.html">Зарегестрируйтесь</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    @@include("html/footer.html", {})
+    
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

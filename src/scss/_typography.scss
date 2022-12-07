@@ -57,7 +57,7 @@
     @include text_style(14px, 300, 24px);
 }
 
-.t-breadcrumb {
+.t-breadcrumb, .t-caption-label {
     @include text_style(12px, 400, 16px);
 }
 
@@ -68,6 +68,14 @@
 
 .t-product-card__price {
     @include text_style(16px, 600, 24px);
+    &::after {
+        content: " ₽"
+    }
+}
+
+.t-price-lg {
+    @include text_style(26px, 600, 32px);
+    color: $c-primary;
 }
 
 .t-center {

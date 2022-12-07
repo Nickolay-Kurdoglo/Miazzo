@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "Войти"
+})
+
+<body>
+
+    @@include("html/header.html", {})
+
+    <section class="breadcrumbs">
+        <div class="wrapper">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Войти</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="singIn">
+        <div class="wrapper">
+            <div class="singIn__container">
+                <p class="t-h2 t-center">Регистрация</p>
+                <div class="text_field">
+                    <label for="" class="text_field-label t-label">Имя</label>
+                    <div class="text_field-container">
+                        <svg class="leading_icon icon">
+                            <use xlink:href="img/sprite.svg#user"></use>
+                        </svg>
+                        <input type="text" placeholder="Ваше имя" class="text_field-input icon-margin">
+                    </div>
+                </div>
+                <div class="text_field">
+                    <label for="" class="text_field-label t-label">Фамилия</label>
+                    <div class="text_field-container">
+                        <svg class="leading_icon icon">
+                            <use xlink:href="img/sprite.svg#user"></use>
+                        </svg>
+                        <input type="text" placeholder="Ваше имя" class="text_field-input icon-margin">
+                    </div>
+                </div>
+                <div class="text_field">
+                    <label for="" class="text_field-label t-label">Телефон</label>
+                    <div class="text_field-container">
+                        <svg class="leading_icon icon">
+                            <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg>
+                        <input type="text" placeholder="Ваше имя" class="text_field-input icon-margin">
+                    </div>
+                </div>
+                <div class="text_field">
+                    <label for="" class="text_field-label t-label">Почта</label>
+                    <div class="text_field-container">
+                        <svg class="leading_icon icon">
+                            <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg>
+                        <input type="text" placeholder="Ваше имя" class="text_field-input icon-margin">
+                    </div>
+                </div>
+                <div class="text_field">
+                    <label for="" class="text_field-label t-label">Адрес</label>
+                    <div class="text_field-container">
+                        <svg class="leading_icon icon">
+                            <use xlink:href="img/sprite.svg#location"></use>
+                        </svg>
+                        <input type="text" placeholder="Ваш пароль" class="text_field-input icon-margin">
+                    </div>
+                </div>
+                <button class="btn">
+                    Создать аккаунт
+                </button>
+                <p class="t-label sing_in_link">
+                    Есть аккаунт? <a href="sing_in.html">Войдите</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    @@include("html/footer.html", {})
+    
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

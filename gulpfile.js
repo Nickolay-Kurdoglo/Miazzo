@@ -34,6 +34,8 @@ import GulpUglify from "gulp-uglify";
 
 import webpack from "webpack-stream";
 
+import htmlmin from "gulp-htmlmin";
+
 // ======================================================================== ^ Импорты
 
 const copy = () => {                            //  Копирование файлов из 
@@ -55,6 +57,9 @@ const html = () => {                            //  Обработка html
         ))
         .pipe(fileinclude())                    //  Шаблонизатор
         .pipe(replace(/@img\//g, 'img/'))       //  Подмена путей img
+        .pipe(htmlmin({
+            collapseWhitespace: true 
+        }))
         .pipe(gulp.dest(paths.dist.html))       //  
         .pipe(browserSync.stream())             //  Автоперезагрузка html
 }                                               //

@@ -35,10 +35,6 @@
             flex: 1 1 200px;
             display: flex;
             justify-content: center;
-
-            .product-card {
-                // max-width: 100%;
-            }
         }
 
         @media screen and (max-width: 450px) {
@@ -49,6 +45,37 @@
             }
         }
 
+    }
+
+    @media screen and (max-width: 1096px) {
+        &-row {
+            .goods__list {
+                li:last-child {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 880px) {
+        &-row {
+            .goods__list {
+                li:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        &-row {
+            .goods__list {
+                li:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
     }
 
 

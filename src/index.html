@@ -21,23 +21,105 @@
 
     @@include("html/sections/offer.html", {})
 
-    <!-- @@include("html/UI.html", {}) -->
+    <section class="smallNav">
+        <div class="wrapper">
+            <nav class="smallNav__container">
+                <ul class="smallNav__list">
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Все</a>
+                    </li>
+
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Новинки</a>
+                    </li>
+
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Акции</a>
+                    </li>
+
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Шторы</a>
+                    </li>
+
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Комплекты</a>
+                    </li>
+
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Тюль</a>
+                    </li>
+
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Портьеры</a>
+                    </li>
+
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Рулонные шторы</a>
+                    </li>
+
+                    <li class="smallNav__item">
+                        <a class="smallNav__link t-nav" href="">Римские шторы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="sales section-margin">
+        <div class="wrapper">
+            <div class="sales__container">
+                <div class="sales__item">
+                    <div class="sales__info">
+                        <p class="sales__name">Штора + тюль</p>
+                        <p class="t-price">от 1200 ₽</p>
+                    </div>
+                    <a href="#" class="sales__link"></a>
+                    <div class="sales__filter"></div>
+                    <img class="sales__image" src="@img/sales_img/curtains.png" alt="">
+                </div>
+                <div class="sales__item">
+                    <div class="sales__info">
+                        <p class="sales__name">Шторы в гостинную</p>
+                    </div>
+                    <a href="#" class="sales__link"></a>
+                    <div class="sales__filter"></div>
+                    <img class="sales__image" src="@img/sales_img/collov-home-design-js8AQlw71HA-unsplash.jpg" alt="">
+                </div>
+                <div class="sales__item">
+                    <div class="sales__info">
+                        <p class="sales__name">Шторы в детскую</p>
+                    </div>
+                    <a href="#" class="sales__link"></a>
+                    <div class="sales__filter"></div>
+                    <img class="sales__image" src="@img/sales_img/spacejoy-7fX2YfJIrOQ-unsplash.jpg" alt="">
+                </div>
+                <div class="sales__item">
+                    <div class="sales__info">
+                        <p class="sales__name">Черная пятница</p>
+                    </div>
+                    <a href="#" class="sales__link"></a>
+                    <div class="sales__filter"></div>
+                    <img class="sales__image" src="@img/sales_img/black_friday.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="goods-section section-margin">
         @@include("html/sections/goods_row.html", {
-            "productName": "Популярное"
+        "productName": "Популярное"
         })
-    
+
         @@include("html/sections/goods_row.html", {
-            "productName": "Все"
+        "productName": "Все"
         })
-        
+
         @@include("html/sections/goods_row.html", {
-            "productName": "Шторы"
+        "productName": "Шторы"
         })
-    
+
         @@include("html/sections/goods_row.html", {
-            "productName": "Тюли"
+        "productName": "Тюли"
         })
     </section>
 
@@ -47,7 +129,7 @@
 
     @@include("html/footer.html", {})
 
-    
+
     <script src="js/script.min.js"></script>
 </body>
 

@@ -1,0 +1,35 @@
+.person {
+    height: 400px;
+
+    .section_title {
+        margin: 0 0 16px 0;
+    }
+
+    .t-nav {
+        color: $c-400-gray;
+    }
+
+    &__panel {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: baseline;
+        gap: 24px;
+    }
+
+    &__info {
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .manage__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

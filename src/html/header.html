@@ -9,7 +9,7 @@
             <div class="header__logo">
                 <img src="@img/MIAZZO.svg" alt="">
             </div>
-            <div class="header__searchbar active">
+            <div class="header__searchbar">
                 <div class="text_field">
                     <div class="text_field-container">
                         <svg class="leading_icon icon">
@@ -35,7 +35,13 @@
             </div>
         </div>
     </div>
-    <div class="header__sidebar ">
+    <div class="header__overlay"></div>
+    <div class="header__sidebar">
+        <button class="js-close-sidebar">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+        </button>
         <div class="header__personal">
             <div class="wrapper">
                 <div class="header__personal-menu">
@@ -71,7 +77,7 @@
 
                     <div class="catalog">
                         <ul class="catalog__list">
-                            <li class="catalog__item active">
+                            <li class="catalog__item">
                                 <a href="#" class="catalog__title">
                                     <span>Все</span>
                                     <svg class="icon">
@@ -168,13 +174,13 @@
                             <a class="nav__link t-nav" href="index.html">Главная</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link t-nav" href="index.html">Контакты</a>
+                            <a class="nav__link t-nav" href="contacts.html">Контакты</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link t-nav" href="index.html">О нас</a>
+                            <a class="nav__link t-nav" href="about_us.html">О нас</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link t-nav" href="index.html">Статьи</a>
+                            <a class="nav__link t-nav" href="articles.html">Статьи</a>
                         </li>
                     </ul>
                 </nav>

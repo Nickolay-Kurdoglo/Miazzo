@@ -1,0 +1,26 @@
+.article {
+    &__header {
+        margin: 0 0 32px 0;
+
+        .t-caption {
+            color: $c-400-gray;
+            margin: 8px 0 0 0;
+        }
+    }
+
+    &__body {
+        p {
+            @extend .t-p;
+        }
+    }
+
+    &__image {
+        margin: 32px 0;
+        display: flex;
+        justify-content: center;
+        img {
+            max-height: 512px;
+            border-radius: 8px;
+        }
+    }
+}

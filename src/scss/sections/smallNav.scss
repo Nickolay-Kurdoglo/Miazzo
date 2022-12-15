@@ -1,0 +1,27 @@
+.smallNav {
+    height: 64px;
+    position: relative;
+    top: -32px;
+    z-index: 50;
+    .wrapper {
+        max-width: 947px;
+    }
+
+    &__container {
+        padding: 20px 32px;
+        border-radius: 16px;
+        background-color: #fff;
+        box-shadow: 0px 57px 34px rgba(0, 0, 0, 0.02), 0px 25px 25px rgba(0, 0, 0, 0.03), 0px 6px 14px rgba(0, 0, 0, 0.03);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 820px) {
+        & {
+            display: none;
+        }
+    }
+}

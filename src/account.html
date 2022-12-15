@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "Личный кабинет"
+})
+
+<body>
+
+    @@include("html/header.html", {})
+
+    <section class="breadcrumbs">
+        <div class="wrapper">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Личный кабинет</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="person">
+        <div class="wrapper">
+            <p class="t-h2 section_title">Личный кабинет</p>
+            <main class="person__panel">
+                <div class="person__manage">
+                    <ul class="manage__list">
+                        <li class="manage__item">
+                            <a class="t-nav" href="#">История заказов</a>
+                        </li>
+                        <li class="manage__item">
+                            <a class="t-nav" href="#">Мои отзывы</a>
+                        </li>
+                        <li class="manage__item">
+                            <a class="t-nav" href="#">Возвраты</a>
+                        </li>
+                        <li class="manage__item">
+                            <a class="t-nav" href="#">Заказы в обработке</a>
+                        </li>
+                        <li class="manage__item">
+                            <a class="t-nav" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="person__data">
+                    <div class="person__header">
+                        <p class="t-h4 person__name">Иванов Иван</p>
+                        <a class="t-nav" href="#" class="change_person_info">изменить профиль</a>
+                    </div>
+                    <div class="person__info">
+                        <a href="mailto: ivanov@example.com">ivanov@example.com</a>
+                        <a href="tel: + 7 (999) 999 99 99">+ 7 (999) 999 99 99</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+    @@include("html/footer.html", {})
+    
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

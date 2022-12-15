@@ -1,5 +1,5 @@
 .product-card {
-    width: 252px;
+    max-width: 252px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -131,7 +131,7 @@
     &__footer {
         display: flex;
         gap: 8px;
-        align-items: baseline;
+        align-items: center;
     }
 
     &__price {
@@ -139,7 +139,8 @@
     }
 
     &__price-discount {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 12px;
         font-weight: 300;
         text-decoration: line-through;
         color: $c-400-gray;
@@ -152,5 +153,19 @@
         color: $c-primary;
         font-size: 14px;
         font-weight: 600;
+    }
+
+    @media screen and (max-width: 450px) {
+        & {
+            max-width: 156px;
+        }
+
+        &__preview {
+            height: 208px;
+        }
+
+        &__footer > div span{
+            display: block;
+        }
     }
 }

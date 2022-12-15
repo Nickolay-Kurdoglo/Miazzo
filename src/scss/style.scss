@@ -29,7 +29,7 @@
 }
 
 .wrapper {
-    width: min(1328px, calc(100% - 16px));
+    width: min(1328px, calc(100% - 32px));
     margin: 0 auto;
 }
 
@@ -74,6 +74,43 @@
             fill-mode: forwards;
             iteration-count: infinite;
         }
+    }
+}
+
+.js-open-filter {
+    display: none;
+    position: fixed;
+    left: 32px;
+    bottom: 10vh;
+    z-index: 24;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: $c-primary;
+    
+    .icon {
+        fill: $c-btn-primary;
+    }
+
+    @media screen and (max-width: 800px) {
+        display: block;
+    }
+}
+
+.scroll-y {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 2px;
+        background: #ddd;
+        border-radius: 2px;
+        /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #565656;
+        border-radius: 2px;
     }
 }
 

@@ -6,13 +6,15 @@
 
     &.open {
 
-        .answer {
+        .content {
             display: block;
         }
 
-        .icon {
-            transition: .2s;
-            transform: rotate(90deg);
+        .accordion-header .icon {
+            
+                transition: .2s;
+                transform: rotate(90deg);
+            
         }
     }
 
@@ -24,7 +26,7 @@
         justify-content: space-between;
     }
 
-    .answer {
+    .content {
         padding: 0 16px 16px 16px;
         display: none;
         color: $c-600-gray;

@@ -16,6 +16,10 @@ import { ProductComponent } from "./components/product.component.js";
 
 import { ChangeParamComponent } from "./components/change_param.component.js";
 
+import { ReviewsSection } from "./sections/reviews.section.js";
+
+import { ConstructorSection } from "./sections/constructon.section.js";
+
 try {
     new ModalComponent("#modal");
 } catch {
@@ -35,7 +39,7 @@ try {
 }
 
 try {
-    new OrderDataComponent(".order_data");
+    new OrderDataComponent(".customer_data");
 } catch {
 
 }
@@ -66,6 +70,18 @@ try {
 
 try {
     new ChangeParamComponent(".change_parameters");
+} catch {
+
+}
+
+try {
+    new ReviewsSection("section.reviews");
+} catch {
+
+}
+
+try {
+    new ConstructorSection(".constructor");
 } catch {
 
 }

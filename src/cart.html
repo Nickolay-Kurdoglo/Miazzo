@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "Корзина"
+})
+
+<body>
+
+    @@include("html/header.html", {})
+
+    <section class="breadcrumbs">
+        <div class="wrapper">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Корзина</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="wrapper">
+            <p class="t-h2">Корзина</p>
+            <div class="cart__wrapper">
+                <div class="cart__i-col">
+                    <div class="cart__container">
+                        <ul class="cart__product-list">
+                            <li class="cart__product-item">
+                                <div class="cart-product">
+                                    <div class="cart-product__preview">
+                                        <img src="@img/product_images/dark brown.png" alt="" class="cart-product__img">
+                                    </div>
+                                    <div class="cart-product__info">
+                                        <p class="t-h5">Шторы / портьеры блэкаут мрамор рогожка</p>
+                                        <p class="t-label">Артикул: 75376906</p>
+                                        <p class="t-label">Размер: 250 х 170 см</p>
+                                        <p class="t-label">Цвет: бежевый</p>
+                                        <div class="cart-product__counter counter">
+                                            <button class="decrease">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#minus"></use>
+                                                </svg>
+                                            </button>
+                                            <input class="count" type="number" value="1">
+                                            <button class="increase">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__handlers">
+                                        <button class="remove-from-cart">
+                                            <svg class="leading_icon icon">
+                                                <use xlink:href="img/sprite.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cart__product-item">
+                                <div class="cart-product">
+                                    <div class="cart-product__preview">
+                                        <img src="@img/product_images/dark brown.png" alt="" class="cart-product__img">
+                                    </div>
+                                    <div class="cart-product__info">
+                                        <p class="t-h5">Шторы / портьеры блэкаут мрамор рогожка</p>
+                                        <p class="t-label">Артикул: 75376906</p>
+                                        <p class="t-label">Размер: 250 х 170 см</p>
+                                        <p class="t-label">Цвет: бежевый</p>
+                                        <div class="cart-product__counter counter">
+                                            <button class="decrease">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#minus"></use>
+                                                </svg>
+                                            </button>
+                                            <input class="count" type="number" value="1">
+                                            <button class="increase">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__handlers">
+                                        <button class="remove-from-cart">
+                                            <svg class="leading_icon icon">
+                                                <use xlink:href="img/sprite.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <p class="t-h2">Данные заказа</p>
+                    <div class="cart__customer-data">
+                        <div class="customer_data">
+                            <nav class="step_navigator">
+                                <span class="t-h4 step_number">Шаг 1</span>
+                                <div class="progress_bar">
+                                    <button class="js-step-btn active"></button>
+                                    <button class="js-step-btn"></button>
+                                    <button class="js-step-btn"></button>
+                                    <div class="progress_container">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="order_sections">
+
+                                <div class="js-order-section contact active">
+                                    <p class="t-h4">Контактная информация</p>
+                                    <div class="customer_info">
+                                        <div class="text_field">
+                                            <label for="" class="text_field-label t-label">Имя</label>
+                                            <div class="text_field-container">
+                                                <svg class="leading_icon icon">
+                                                    <use xlink:href="img/sprite.svg#user"></use>
+                                                </svg>
+                                                <input type="text" placeholder="Иван" class="text_field-input icon-margin">
+                                            </div>
+                                        </div>
+
+                                        <div class="text_field">
+                                            <label for="" class="text_field-label t-label">Фамилия</label>
+                                            <div class="text_field-container">
+                                                <svg class="leading_icon icon">
+                                                    <use xlink:href="img/sprite.svg#user"></use>
+                                                </svg>
+                                                <input type="text" placeholder="Иванов" class="text_field-input icon-margin">
+                                            </div>
+                                        </div>
+
+                                        <div class="text_field">
+                                            <label for="" class="text_field-label t-label">Почта</label>
+                                            <div class="text_field-container">
+                                                <svg class="leading_icon icon">
+                                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                                </svg>
+                                                <input type="text" placeholder="ivanov@example.com"
+                                                    class="text_field-input icon-margin">
+                                            </div>
+                                        </div>
+
+                                        <div class="text_field">
+                                            <label for="" class="text_field-label t-label">Телефон</label>
+                                            <div class="text_field-container">
+                                                <svg class="leading_icon icon">
+                                                    <use xlink:href="img/sprite.svg#phone"></use>
+                                                </svg>
+                                                <input type="text" placeholder="+7 (999) 999 99 99"
+                                                    class="text_field-input icon-margin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-order-section delivery">
+                                    <p class="t-h4">Доставка</p>
+                                    <div class="delivery_info">
+                                        <div class="recieving">
+                                            <p class="t-p">Способ получения</p>
+                                            <ul class="choises">
+                                                <li>
+                                                    <label class="choice_element" for="courier">
+                                                        <input id="courier" name="recieving_way"
+                                                            class="choice_element-input" type="radio">
+                                                        <div class="check_mark"></div>
+                                                        <span class="t-label choice_element-label">Доставка
+                                                            курьером</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="choice_element" for="self_getting">
+                                                        <input id="self_getting" name="recieving_way"
+                                                            class="choice_element-input" type="radio">
+                                                        <div class="check_mark"></div>
+                                                        <span class="t-label choice_element-label">Самовывоз</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="text_field">
+                                            <label for="customer_adress" class="text_field-label t-label">Адрес</label>
+                                            <div class="text_field-container">
+                                                <svg class="leading_icon icon">
+                                                    <use xlink:href="img/sprite.svg#location"></use>
+                                                </svg>
+                                                <input type="text" id="customer_adress"
+                                                    placeholder="Город, улица, дом, подъезд" class="text_field-input icon-margin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-order-section payment">
+                                    <p class="t-h4">Оплата</p>
+                                    <p class="t-p">Способ оплаты</p>
+                                    <ul class="choises">
+                                        <li>
+                                            <label class="choice_element" for="cash_in_office">
+                                                <input id="cash_in_office" name="payment" class="choice_element-input"
+                                                    type="radio">
+                                                <div class="check_mark"></div>
+                                                <span class="t-label choice_element-label">Наличными курьером</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="choice_element" for="cash_to_courier">
+                                                <input id="cash_to_courier" name="payment" class="choice_element-input"
+                                                    type="radio">
+                                                <div class="check_mark"></div>
+                                                <span class="t-label choice_element-label">Наличными на пункте
+                                                    самовывоза</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="step_switcher">
+                                <button class="step_back">Назад</button>
+                                <button class="step_next">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__p-col">
+                    <div class="cart__purchase purchase">
+                        <table class="purchase__info">
+                            <tr>
+                                <td>Товары</td>
+                                <td>2 670 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Скидка</td>
+                                <td>0 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Пошив</td>
+                                <td>730 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Доставка</td>
+                                <td>0 ₽</td>
+                            </tr>
+                        </table>
+                        <div class="purchase__summary">
+                            <span class="t-h6">Сумма:</span>
+                            <span class="t-summary">3 400 ₽</span>
+                        </div>
+                        <div class="purchase__footer">
+                            <button class="btn">Оформить заказ</button>
+                            <p>Нажимая кнопку “оформить заказ” вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include("html/footer.html", {})
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -8,11 +8,22 @@ export class Component {
         console.log("Hi component");
     }
 
-    addClass(className) {
-        if (!this.$el.classList.contains(className)) this.$el.classList.add(className);
+    addClass(element, className) {
+        if (!element.classList.contains(className)) element.classList.add(className);
     }
 
-    removeClass(className) {
-        if (this.$el.classList.contains(className)) this.$el.classList.remove(className);
+    removeClass(element, className) {
+        if (element.classList.contains(className)) element.classList.remove(className);
+    }
+
+    toggleClass(element, className) {
+        element.classList.toggle(className);
+    }
+
+    tabController({tab, tabset, tabContent}, index) {        
+        tabset.map(item => this.removeClass(item, "active"));
+        tabContent.map(item => this.removeClass(item, "active"));
+        this.addClass(tab, "active");
+        this.addClass(tabContent[index], "active");
     }
 }

@@ -11,7 +11,9 @@ export class FilterComponent extends Component {
             $filterListBody = [...this.$el.querySelectorAll(".filters__parameters-list")],
             $filterRangeSliders = [...this.$el.querySelectorAll(".filters-price__range-input")],
             $filterRangeProgres = this.$el.querySelector(".filters-price__range"),
-            $filterPriceInput = [...this.$el.querySelectorAll(".filters-price__inputs .text_field-input")];
+            $filterPriceInput = [...this.$el.querySelectorAll(".filters-price__inputs .text_field-input")],
+            $filterOpenBtn = document.querySelector(".js-open-filter"),
+            $filterCloseBtn = this.$el.querySelector(".js-close-filter");
 
         $filterListBody.forEach(item => {
             if (item.offsetHeight < 224) item.style.overflowY = "auto";
@@ -40,11 +42,11 @@ export class FilterComponent extends Component {
                 } else {
                     $filterPriceInput[0].value = minValue;
                     $filterPriceInput[1].value = maxValue;
-                    $filterRangeProgres.style.left = `${((minValue / $filterRangeSliders[0].max) * 100).toFixed(2)}%`;
-                    $filterRangeProgres.style.right = `${(100 - (maxValue / $filterRangeSliders[1].max) * 100).toFixed(2)}%`;
+                    $filterRangeProgres.style.left =`${((minValue / $filterRangeSliders[0].max) * 100).toFixed(2)}%`;
+                    $filterRangeProgres.style.right =`${(100 - (maxValue / $filterRangeSliders[1].max) * 100).toFixed(2)}%`;
                 }
-            })
-        })
+            });
+        });
 
         $filterPriceInput.forEach((priceInput, inputIndex) => {
             priceInput.addEventListener("input", event => {
@@ -69,7 +71,17 @@ export class FilterComponent extends Component {
                     }
                 }
 
-            })
-        })
+            });
+        });
+
+        $filterOpenBtn.addEventListener("click", () => {
+            this.$el.classList.add("active");
+            document.body.style.overflowY = "hidden";
+        });
+
+        $filterCloseBtn.addEventListener("click", () => {
+            this.$el.classList.remove("active");
+            document.body.style.overflowY = "initial";
+        });
     }
 }

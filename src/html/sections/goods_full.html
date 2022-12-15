@@ -6,12 +6,25 @@
                 <span class="goods__count">256 товаров</span>
             </div>
             <div class="goods__sort">
-                <span>Сортировка</span>
+                <label for="goods_sort">Сортировать</label>
+                <select name="goods_sort" id="goods_sort">
+                    <option value="">по возрастанию</option>
+                    <option value="">по убыванию</option>
+                </select>
             </div>
         </div>
         <div class="goods__container">
             <div class="goods__filter js-filters">
-                <form action="">
+                <div class="filters-panel__header">
+                    <p class="t-h4">Фильтр</p>
+                    <button class="js-close-filter">
+                        <svg class="check_mark icon">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <form action="" class="filters-panel__form">
+                    
                     <ul class="filters">
                         <li class="filters__item color-filter active">
                             <button type="button" class="filters__header js-filter-header">
@@ -24,8 +37,10 @@
                                 <div class="filters-price">
                                     <div class="filters-price__slider">
                                         <div class="filters-price__range"></div>
-                                        <input class="filters-price__range-input range-input-min" type="range" name="price-min" min="0" max="15000" value="0">
-                                        <input class="filters-price__range-input range-input-max" type="range" name="price-max" min="0" max="15000" value="15000">
+                                        <input class="filters-price__range-input range-input-min" type="range"
+                                            name="price-min" min="0" max="15000" value="0">
+                                        <input class="filters-price__range-input range-input-max" type="range"
+                                            name="price-max" min="0" max="15000" value="15000">
                                     </div>
                                     <div class="filters-price__inputs">
                                         <div class="text_field">
@@ -333,22 +348,22 @@
                                         <ul class="filters__parameters-group-body">
                                             <li class="filters__parametr">
                                                 <label class="choice_element color-choise" for="orangered">
-                                                    <input name="color_curtains" id="orangered" class="choice_element-input"
-                                                        type="checkbox">
+                                                    <input name="color_curtains" id="orangered"
+                                                        class="choice_element-input" type="checkbox">
                                                     <div class="check_mark" style="background-color: orangered;"></div>
                                                 </label>
                                             </li>
                                             <li class="filters__parametr">
                                                 <label class="choice_element color-choise" for="lightblue">
-                                                    <input name="color_curtains" id="lightblue" class="choice_element-input"
-                                                        type="checkbox">
+                                                    <input name="color_curtains" id="lightblue"
+                                                        class="choice_element-input" type="checkbox">
                                                     <div class="check_mark" style="background-color: lightblue;"></div>
                                                 </label>
                                             </li>
                                             <li class="filters__parametr">
                                                 <label class="choice_element color-choise" for="burlywood">
-                                                    <input name="color_curtains" id="burlywood" class="choice_element-input"
-                                                        type="checkbox">
+                                                    <input name="color_curtains" id="burlywood"
+                                                        class="choice_element-input" type="checkbox">
                                                     <div class="check_mark" style="background-color: burlywood;"></div>
                                                 </label>
                                             </li>
@@ -595,14 +610,13 @@
             </div>
             <div class="goods__wrapper">
                 <ul class="goods__list">
-
                     <li>
-                        <div class="product-card liked">
+                        <div class="product-card">
                             <a class="product-card__link" href="product_page.html">
                                 <!--Направлять на страницу товара при клике-->
                             </a>
                             <div class="product-card__preview">
-                                <img class="product-card__img" src="@img/product_images/black.png" alt="">
+                                <img class="product-card__img" src="@img/product_images/dark brown.png" alt="">
                                 <button class="add-to-fav">
                                     <svg class="icon">
                                         <use xlink:href="img/sprite.svg#heart"></use>
@@ -634,12 +648,12 @@
                     </li>
 
                     <li>
-                        <div class="product-card liked">
+                        <div class="product-card">
                             <a class="product-card__link" href="product_page.html">
                                 <!--Направлять на страницу товара при клике-->
                             </a>
                             <div class="product-card__preview">
-                                <img class="product-card__img" src="@img/product_images/blue.png" alt="">
+                                <img class="product-card__img" src="@img/product_images/blue_s.png" alt="">
                                 <button class="add-to-fav">
                                     <svg class="icon">
                                         <use xlink:href="img/sprite.svg#heart"></use>
@@ -671,7 +685,7 @@
                     </li>
 
                     <li>
-                        <div class="product-card liked">
+                        <div class="product-card">
                             <a class="product-card__link" href="product_page.html">
                                 <!--Направлять на страницу товара при клике-->
                             </a>
@@ -708,7 +722,7 @@
                     </li>
 
                     <li>
-                        <div class="product-card liked">
+                        <div class="product-card">
                             <a class="product-card__link" href="product_page.html">
                                 <!--Направлять на страницу товара при клике-->
                             </a>
@@ -745,12 +759,271 @@
                     </li>
 
                     <li>
-                        <div class="product-card liked">
+                        <div class="product-card">
+                            <a class="product-card__link" href="product_page.html">
+                                <!--Направлять на страницу товара при клике-->
+                            </a>
+                            <div class="product-card__preview">
+                                <img class="product-card__img" src="@img/product_images/gold2.png" alt="">
+                                <button class="add-to-fav">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="product-card__name">
+                                Шторы / портьеры блэкаут мрамор рогожка
+                            </p>
+                            <div class="product-card__info">
+                                <div class="product-card__rate">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#s-star"></use>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                                <div class="product-card__reviews">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <span class="product-card__price t-product-card__price">2560</span>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product-card">
                             <a class="product-card__link" href="product_page.html">
                                 <!--Направлять на страницу товара при клике-->
                             </a>
                             <div class="product-card__preview">
                                 <img class="product-card__img" src="@img/product_images/textured gray.png" alt="">
+                                <button class="add-to-fav">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="product-card__name">
+                                Шторы / портьеры блэкаут мрамор рогожка
+                            </p>
+                            <div class="product-card__info">
+                                <div class="product-card__rate">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#s-star"></use>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                                <div class="product-card__reviews">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <span class="product-card__price t-product-card__price">2560</span>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product-card">
+                            <a class="product-card__link" href="product_page.html">
+                                <!--Направлять на страницу товара при клике-->
+                            </a>
+                            <div class="product-card__preview">
+                                <img class="product-card__img" src="@img/product_images/dark brown.png" alt="">
+                                <button class="add-to-fav">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="product-card__name">
+                                Шторы / портьеры блэкаут мрамор рогожка
+                            </p>
+                            <div class="product-card__info">
+                                <div class="product-card__rate">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#s-star"></use>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                                <div class="product-card__reviews">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <span class="product-card__price t-product-card__price">2560</span>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product-card">
+                            <a class="product-card__link" href="product_page.html">
+                                <!--Направлять на страницу товара при клике-->
+                            </a>
+                            <div class="product-card__preview">
+                                <img class="product-card__img" src="@img/product_images/тюль.png" alt="">
+                                <button class="add-to-fav">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="product-card__name">
+                                Шторы / портьеры блэкаут мрамор рогожка
+                            </p>
+                            <div class="product-card__info">
+                                <div class="product-card__rate">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#s-star"></use>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                                <div class="product-card__reviews">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <span class="product-card__price t-product-card__price">2560</span>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product-card">
+                            <a class="product-card__link" href="product_page.html">
+                                <!--Направлять на страницу товара при клике-->
+                            </a>
+                            <div class="product-card__preview">
+                                <img class="product-card__img" src="@img/product_images/gold.png" alt="">
+                                <button class="add-to-fav">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="product-card__name">
+                                Шторы / портьеры блэкаут мрамор рогожка
+                            </p>
+                            <div class="product-card__info">
+                                <div class="product-card__rate">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#s-star"></use>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                                <div class="product-card__reviews">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <span class="product-card__price t-product-card__price">2560</span>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product-card">
+                            <a class="product-card__link" href="product_page.html">
+                                <!--Направлять на страницу товара при клике-->
+                            </a>
+                            <div class="product-card__preview">
+                                <img class="product-card__img" src="@img/product_images/gray.png" alt="">
+                                <button class="add-to-fav">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="product-card__name">
+                                Шторы / портьеры блэкаут мрамор рогожка
+                            </p>
+                            <div class="product-card__info">
+                                <div class="product-card__rate">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#s-star"></use>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                                <div class="product-card__reviews">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <span class="product-card__price t-product-card__price">2560</span>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product-card">
+                            <a class="product-card__link" href="product_page.html">
+                                <!--Направлять на страницу товара при клике-->
+                            </a>
+                            <div class="product-card__preview">
+                                <img class="product-card__img" src="@img/product_images/milk.png" alt="">
+                                <button class="add-to-fav">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="product-card__name">
+                                Шторы / портьеры блэкаут мрамор рогожка
+                            </p>
+                            <div class="product-card__info">
+                                <div class="product-card__rate">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#s-star"></use>
+                                    </svg>
+                                    <span>4</span>
+                                </div>
+                                <div class="product-card__reviews">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <span class="product-card__price t-product-card__price">2560</span>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product-card">
+                            <a class="product-card__link" href="product_page.html">
+                                <!--Направлять на страницу товара при клике-->
+                            </a>
+                            <div class="product-card__preview">
+                                <img class="product-card__img" src="@img/product_images/blue.png" alt="">
                                 <button class="add-to-fav">
                                     <svg class="icon">
                                         <use xlink:href="img/sprite.svg#heart"></use>

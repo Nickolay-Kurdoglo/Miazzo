@@ -7,7 +7,7 @@
 
 <body>
 
-    @@include("html/header.html", {})
+    <!-- @@include("html/header.html", {}) -->
 
     <section class="breadcrumbs">
         <div class="wrapper">
@@ -21,6 +21,12 @@
             </ul>
         </div>
     </section>
+
+    <button class="js-open-filter">
+        <svg class="icon">
+            <use xlink:href="img/sprite.svg#filter"></use>
+        </svg>
+    </button>
 
     @@include("html/sections/goods_full.html", {
         "productTitle": "Шторы"

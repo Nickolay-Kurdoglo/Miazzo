@@ -5,6 +5,10 @@
     color: $c-btn-primary;
     transition: background .3s;
 
+    .icon {
+        fill: $c-btn-primary;
+    }
+
     @extend .t-button;
 
     &:hover {
@@ -21,6 +25,10 @@
         border: 2px solid $c-primary;
         color: $c-primary;
         transition: .2s;
+
+        .icon {
+            fill: $c-primary;
+        }
 
         &:hover {
             padding: 10px 30px;

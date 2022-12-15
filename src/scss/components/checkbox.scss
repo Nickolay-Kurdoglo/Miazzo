@@ -26,6 +26,39 @@
         display: none;
     }
 
+    &.image {
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+
+        .choice_element-label {
+            order: 0;
+        }
+
+        .check_mark {
+            order: 1;
+            width: 100%;
+            height: 56px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            border: 1px solid #dddddd;
+            
+
+            &::after {
+                display: none;
+            }
+
+            img {
+                position: absolute;
+                top: -16px;
+                left: 0;
+                width: 100%;
+                // object-fit: cover;
+            }
+        }
+    }
+
     &-input[type="checkbox"]:checked~.check_mark {
         background-color: $c-primary;
         border: 1px solid $c-primary;
@@ -49,6 +82,13 @@
         border-radius: 50%;
         transform: translate(-50%, -50%);
         background-color: $c-primary;
+    }
+
+    &.image {
+        .choice_element-input:checked~.check_mark {
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px $c-primary;
+        }
     }
 
     &.color-choise .check_mark {

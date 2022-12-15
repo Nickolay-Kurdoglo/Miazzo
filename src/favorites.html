@@ -7,7 +7,7 @@
 
 <body>
 
-    @@include("html/header.html", {})
+    <!-- @@include("html/header.html", {}) -->
 
     <section class="breadcrumbs">
         <div class="wrapper">
@@ -28,7 +28,7 @@
             <div class="goods">
                 <ul class="goods__list">
                     <li>
-                        <div class="product-card liked">
+                        <div class="product-card ">
                             <a class="product-card__link" href="product_page.html">
                                 <!--Направлять на страницу товара при клике-->
                             </a>
@@ -61,8 +61,10 @@
                                 </div>
                             </div>
                             <div class="product-card__footer">
-                                <span class="product-card__price t-product-card__price">2560</span>
-                                <span class="product-card__price-discount t-product-card__price">2048</span>
+                                <div>
+                                    <span class="product-card__price t-product-card__price">2560</span>
+                                    <span class="product-card__price-discount t-product-card__price">2048</span>
+                                </div>
                                 <button class="add-to-cart">В корзину</button>
                             </div>
                         </div>
@@ -106,7 +108,7 @@
                     </li>
 
                     <li>
-                        <div class="product-card liked">
+                        <div class="product-card ">
                             <a class="product-card__link" href="product_page.html">
                                 <!--Направлять на страницу товара при клике-->
                             </a>
@@ -143,7 +145,7 @@
                     </li>
 
                     <li>
-                        <div class="product-card liked">
+                        <div class="product-card ">
                             <a class="product-card__link" href="product_page.html">
                                 <!--Направлять на страницу товара при клике-->
                             </a>
@@ -179,14 +181,14 @@
                         </div>
                     </li>
 
-                    
+
                 </ul>
             </div>
         </div>
     </section>
 
     @@include("html/footer.html", {})
-    
+
     <script src="js/script.min.js"></script>
 </body>
 

@@ -94,15 +94,52 @@ try {
 
 try {
     document.addEventListener('DOMContentLoaded', function () {
-        // var splideProduct = new Splide('#splide-product', {
-        //     autoWidth: true
-        // });
-        // splideProduct.mount();
-
         var elms = Array.from(document.getElementsByClassName('splide'));
 
         elms.forEach((item, index) => {
-            new Splide(item).mount();
+
+            if (item.getAttribute("id") === "splide-product") {
+                var splide = new Splide('#splide-product', {
+                    pagination: false,
+                });
+
+
+                var thumbnails = document.getElementsByClassName('thumbnail');
+                var current;
+
+
+                for (var i = 0; i < thumbnails.length; i++) {
+                    initThumbnail(thumbnails[i], i);
+                }
+
+
+                function initThumbnail(thumbnail, index) {
+                    thumbnail.addEventListener('click', function () {
+                        splide.go(index);
+                    });
+                }
+
+
+                splide.on('mounted move', function () {
+                    var thumbnail = thumbnails[splide.index];
+
+
+                    if (thumbnail) {
+                        if (current) {
+                            current.classList.remove('is-active');
+                        }
+
+
+                        thumbnail.classList.add('is-active');
+                        current = thumbnail;
+                    }
+                });
+
+
+                splide.mount();
+            } else {
+                new Splide(item).mount();
+            }
         });
     });
 } catch {

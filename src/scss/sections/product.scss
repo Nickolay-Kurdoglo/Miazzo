@@ -33,6 +33,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+        overflow: hidden;
 
         .gallery_item {
             max-width: 96px;
@@ -43,11 +44,11 @@
             z-index: 14;
             overflow: hidden;
 
-            &.active {
+            &.is-active {
                 border: 2px solid $c-200-gray;
             }
 
-            &.active::after {
+            &.is-active::after {
                 content: "";
                 position: absolute;
                 z-index: 16;

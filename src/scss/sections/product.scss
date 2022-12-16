@@ -99,12 +99,6 @@
             }
         }
 
-
-
-        // img {
-        //     width: 100%;
-        //     // object-fit: cover;
-        // }
     }
 
     // ========== INFO STYLES
@@ -336,6 +330,8 @@
         }
 
         &__gallery {
+            max-width: none;
+            flex-basis: 104px;
             flex-direction: row;
             order: 2;
         }

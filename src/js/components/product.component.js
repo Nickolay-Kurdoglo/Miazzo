@@ -10,17 +10,27 @@ export class ProductComponent extends Component {
         const $galleryItems = Array.from(this.$el.querySelectorAll(".gallery_item"));
 
         window.addEventListener("DOMContentLoaded", () => {
-            const $splideBtns = document.querySelectorAll(".splide__arrow");
+            const $carouserList = this.$el.querySelector(".splide__list");
+            const $galleryImages = this.$el.querySelectorAll(".gallery_item");
+            const galleryObserver = new MutationObserver((mutations) => {
+                let $carouserSlides = this.$el.querySelectorAll(".splide__slide");
+                let currentSlide = 0;
 
-            $splideBtns.forEach((item, index) => {
-                item.addEventListener("click", event => {
-                    const $carouserSlides = Array.from(this.$el.querySelectorAll(".splide__slide"));
-                    
-                    console.log($carouserSlides[2]);
-                    
+                $carouserSlides.forEach((item, index) => {
+                    if (item.classList.contains("is-active")) {
+                        currentSlide = index;
+                        
+                        $galleryImages.forEach(item => this.removeClass(item, "active"));
+                        this.addClass($galleryImages[currentSlide], "active")
+                    }
                 });
             });
-        })
+
+            galleryObserver.observe($carouserList, {
+                childList: true,
+                attributes: true
+            });
+        });
 
         // Табы описания товара
 

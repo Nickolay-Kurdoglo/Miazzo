@@ -87,13 +87,19 @@ try {
 }
 
 try {
+    new ModalComponent(".modal");
+} catch {
+
+}
+
+try {
     document.addEventListener('DOMContentLoaded', function () {
         // var splideProduct = new Splide('#splide-product', {
         //     autoWidth: true
         // });
         // splideProduct.mount();
 
-        var elms = Array.from(document.getElementsByClassName( 'splide' ));
+        var elms = Array.from(document.getElementsByClassName('splide'));
 
         elms.forEach((item, index) => {
             new Splide(item).mount();
@@ -102,3 +108,25 @@ try {
 } catch {
 
 }
+
+try {
+    document.querySelector(".js-copy-path").addEventListener("click", function () {
+        const pagePath = window.location.href;
+
+        this.classList.add("success");
+
+        setTimeout(() => {
+            this.classList.remove("success");
+        }, 500);
+
+        try {
+            navigator.clipboard.writeText(pagePath);
+        } catch {
+            console.warn("Not success!");
+        }
+
+    });
+} catch {
+
+}
+

@@ -383,7 +383,7 @@
         &__sidebar {
             position: fixed;
             top: 0;
-            left: -70vw;
+            left: min(-70vw, -284px);
             width: max(70vw, 284px);
             height: 100vh;
             background-color: #fff;

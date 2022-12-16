@@ -1,11 +1,26 @@
 import { Component } from "./component.js";
 
 export class ProductComponent extends Component {
-    constructor (element) {
+    constructor(element) {
         super(element)
     }
 
     init() {
+
+        const $galleryItems = Array.from(this.$el.querySelectorAll(".gallery_item"));
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const $splideBtns = document.querySelectorAll(".splide__arrow");
+
+            $splideBtns.forEach((item, index) => {
+                item.addEventListener("click", event => {
+                    const $carouserSlides = Array.from(this.$el.querySelectorAll(".splide__slide"));
+                    
+                    console.log($carouserSlides[2]);
+                    
+                });
+            });
+        })
 
         // Табы описания товара
 
@@ -26,7 +41,7 @@ export class ProductComponent extends Component {
         })
 
         const $changeParamOpen = this.$el.querySelector(".js-changeParam-open");
-        
+
         $changeParamOpen.addEventListener("click", () => {
             document.querySelector(".change_parameters").classList.add("active");
             document.body.style.overflowY = "hidden";

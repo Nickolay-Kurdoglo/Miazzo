@@ -1,0 +1,58 @@
+.fastPurchase {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 600;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.active {
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    &__modal {
+        position: relative;
+        max-width: 512px;
+        margin: 0 auto;
+        padding: 16px 40px 40px;
+        border-radius: 16px;
+        border: $b-filter;
+        background-color: #fff;
+
+        .js-close-modal {
+            padding: 8px;
+            position: absolute;
+            top: 0;
+            right: -56px;
+        }
+    }
+    
+    &__form {
+        margin: 32px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .overlay {
+        padding: 128px 8px 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000060;
+    }
+
+    @media screen and (max-width: 680px) {
+        &__modal {
+            padding: 16px;
+            
+            .js-close-modal {
+                top: 8px;
+                right: 8px;
+                background-color: #fff;
+            }
+        }
+    }
+}

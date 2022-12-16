@@ -5,7 +5,7 @@ export class Component {
     }
 
     init() {
-        console.log("Hi component");
+        
     }
 
     addClass(element, className) {
@@ -20,10 +20,10 @@ export class Component {
         element.classList.toggle(className);
     }
 
-    tabController({tab, tabset, tabContent}, index) {        
-        tabset.map(item => this.removeClass(item, "active"));
-        tabContent.map(item => this.removeClass(item, "active"));
-        this.addClass(tab, "active");
-        this.addClass(tabContent[index], "active");
+    tabController({tab, tabset, tabContent}, index, activeClass = "active") {        
+        tabset.map(item => this.removeClass(item, activeClass));
+        tabContent.map(item => this.removeClass(item, activeClass));
+        this.addClass(tab, activeClass);
+        this.addClass(tabContent[index], activeClass);
     }
 }

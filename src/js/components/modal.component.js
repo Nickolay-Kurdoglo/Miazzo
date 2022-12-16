@@ -10,23 +10,23 @@ export class ModalComponent extends Component {
 
         modalOpeners.forEach(btn => {
             btn.addEventListener("click", () => {
-                this.$el.classList.add("opened")
+                this.$el.classList.add("active")
             })
         })
 
         this.$el.addEventListener("click", event => {
             let clickedEl = event.target;
 
-            if(event.target === this.$el)
-                this.$el.classList.remove("opened");
+            if(event.target.classList.contains("overlay"))
+                this.$el.classList.remove("active");
 
-            if (clickedEl.classList.contains("modal__close"))
-                this.$el.classList.remove("opened");
+            if (clickedEl.classList.contains("js-close-modal") || clickedEl.parentElement.classList.contains("js-close-modal"))
+                this.$el.classList.remove("active");
         });
 
         document.addEventListener("keydown", event => {
-            if (this.$el.classList.contains("opened") && event.code === "Escape") {
-                this.$el.classList.remove("opened");
+            if (this.$el.classList.contains("active") && event.code === "Escape") {
+                this.$el.classList.remove("active");
             }
         })
 

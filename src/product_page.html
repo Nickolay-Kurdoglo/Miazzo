@@ -127,13 +127,13 @@
                 <div class="product__photos">
                     <div class="product__gallery">
                         <div class="gallery_item active">
-                            <img src="@img/product_images/blue.png" alt="">
+                            <img src="@img/product_images/dark brown.png" alt="">
                         </div>
                         <div class="gallery_item ">
-                            <img src="@img/product_images/milk.png" alt="">
+                            <img src="@img/product_images/blue.png" alt="">
                         </div>
                         <div class="gallery_item">
-                            <img src="@img/product_images/dark brown.png" alt="">
+                            <img src="@img/product_images/milk.png" alt="">
                         </div>
                     </div>
                     <div class="product__carousel carousel">
@@ -216,7 +216,7 @@
                     </div>
                     <div class="product__purchase">
                         <button class="btn">Добавить в корзину</button>
-                        <button class="btn btn_secondary">Быстрая покупка</button>
+                        <button class="btn btn_secondary js-open-modal">Быстрая покупка</button>
                     </div>
                     <div class="product__actions">
                         <button class="add-to-fav">
@@ -231,7 +231,7 @@
                             </svg>
                             <span>Изменить параметры</span>
                         </button>
-                        <button class="add-to-fav">
+                        <button class="js-copy-path">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#copy"></use>
                             </svg>
@@ -396,16 +396,16 @@
         </div>
     </div>
 
-    <!-- @@include("html/sections/goods_row.html", {
+    @@include("html/sections/goods_row.html", {
     "productName": "Рекомендуемое"
-    }) -->
+    })
+
+    @@include("html/sections/fast_purchase.html", {})
 
     @@include("html/footer.html", {})
 
     <script defer src="files/fslightbox/fslightbox.js"></script>
-
     <script defer src="files/splide/js/splide.min.js"></script>
-
     <script defer src="js/script.min.js"></script>
 </body>
 

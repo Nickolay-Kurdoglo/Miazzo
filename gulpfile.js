@@ -89,7 +89,6 @@ const scss = () => {
         .pipe(rename({
             extname: ".min.css"
         }))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.dist.css))  
         .pipe(browserSync.stream())
 }

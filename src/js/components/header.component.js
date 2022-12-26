@@ -28,17 +28,22 @@ export class HeaderComponent extends Component {
         $closeSidebar.addEventListener("click", () => {
             this.removeClass($sidebar, "active");
             this.removeClass($overlay, "active");
+            document.body.style.overflowY = 'initial';
+
         });
 
         
         $overlay.addEventListener("click", () => {
             this.removeClass($sidebar, "active");
             this.removeClass($overlay, "active");
+            document.body.style.overflowY = 'initial';
+
         })
 
         $burgerMenu.addEventListener("click", () => {
             this.addClass($sidebar, "active");
             this.addClass($overlay, "active");
+            document.body.style.overflowY = 'hidden';
         });
 
 

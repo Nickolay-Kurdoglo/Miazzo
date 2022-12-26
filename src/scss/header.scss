@@ -166,7 +166,6 @@
     }
 
     &__catalog {
-        
 
         .js-catalog {
             display: flex;
@@ -201,6 +200,7 @@
                 &,
                 span {
                     @extend .t-label;
+                    font-weight: 400;
                 }
             }
 
@@ -211,6 +211,11 @@
                 width: 160px;
                 padding: 12px;
                 border-radius: 8px;
+             
+                span {
+                    font-weight: 600 !important;
+                }
+                
 
                 &:hover {
                     background-color: #F0F0F0;
@@ -232,8 +237,9 @@
                     position: absolute;
                     top: 8px;
                     left: 168px;
-                    flex-wrap: wrap;
-                    flex-direction: column;
+                    right: 8px;
+                    
+                    flex-flow: column wrap;
                     max-height: 416px;
                     gap: 8px;
 
@@ -243,6 +249,7 @@
                 }
 
                 &-item {
+
                     a {
                         border-radius: 8px;
                         padding: 12px;
@@ -390,8 +397,21 @@
             z-index: 1000;
             justify-content: start;
             padding: 16px;
-            border-radius: 0 16px 16px 0;
             transition: left .6s cubic-bezier(0, 1.1, 0.57, 0.99);
+
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 4px;
+                background: #ddd;
+                border-radius: 2px;
+                /* width of the entire scrollbar */
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #565656;
+                border-radius: 2px;
+            }
 
             .wrapper {
                 width: auto;
@@ -434,7 +454,7 @@
                         order: 1;
                     }
 
-                    
+
                     .fav_count {
                         right: -12px;
                     }
@@ -450,23 +470,34 @@
                 flex-direction: column;
                 align-items: start;
                 height: 100%;
+                gap: 16px;
             }
         }
 
         &__catalog {
+
             width: 100%;
+            flex-grow: 1;
 
             .js-catalog {
                 display: none;
             }
-
-
 
             .catalog {
                 position: initial;
                 min-width: auto;
                 height: auto;
                 display: block;
+
+                &__title {
+                    &:hover {
+                        background: none;
+                    }
+
+                    &~.catalog__categories-list {
+                        visibility: initial;
+                    }
+                }
 
                 &__item {
                     display: flex;
@@ -487,7 +518,7 @@
                         .catalog__title {
                             border-bottom: 1px solid $c-100-gray;
                         }
-                        
+
                     }
 
                     &:last-child.active {
@@ -531,10 +562,6 @@
         }
 
         &__nav {
-            &.nav {
-                margin: auto 0 0 0;
-            }
-
             .nav {
                 &__list {
                     flex-wrap: wrap;

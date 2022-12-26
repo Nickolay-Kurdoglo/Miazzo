@@ -57,9 +57,9 @@ const html = () => {                            //  Обработка html
         ))
         .pipe(fileinclude())                    //  Шаблонизатор
         .pipe(replace(/@img\//g, 'img/'))       //  Подмена путей img
-        .pipe(htmlmin({
-            collapseWhitespace: true 
-        }))
+        // .pipe(htmlmin({
+        //     collapseWhitespace: true 
+        // }))
         .pipe(gulp.dest(paths.dist.html))       //  
         .pipe(browserSync.stream())             //  Автоперезагрузка html
 }                                               //

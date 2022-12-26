@@ -125,7 +125,33 @@
 
     @@include("html/sections/reviews.html", {})
 
-    @@include("html/sections/fast_purchase.html", {})
+    <section class="fastPurchase modal">
+        <div class="overlay">
+            <div class="modal__container">
+                <button class="js-close-modal">
+                    <svg class="icon-text">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <p class="t-h3">Связаться с нами</p>
+                <form action="" class="modal__form">
+                    <div class="text_field">
+                        <label for="" class="text_field-label t-label">ФИО</label>
+                        <div class="text_field-container">
+                            <input type="text" placeholder="ФИО" class="text_field-input ">
+                        </div>
+                    </div>
+                    <div class="text_field">
+                        <label for="" class="text_field-label t-label">Телефон</label>
+                        <div class="text_field-container">
+                            <input type="tel" placeholder="+7 (---) --- -- --" class="text_field-input ">
+                        </div>
+                    </div>
+                    <button class="btn">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     @@include("html/sections/FAQ.html", {})
 

@@ -151,6 +151,9 @@
         }
 
         &[data-rate='1'] {
+            .icon:nth-child(1) {
+                fill: #F1BF0F;
+            }
             .icon {
                 fill: none;
             }

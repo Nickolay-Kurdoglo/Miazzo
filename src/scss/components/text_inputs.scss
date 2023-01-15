@@ -45,6 +45,10 @@
         &:focus {
             border: 1px solid $c-600-gray;
         }
+
+        &:invalid {
+            border: 1px solid #a02929;
+        }
     }
 }
 

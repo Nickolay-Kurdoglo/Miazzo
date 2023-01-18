@@ -15,7 +15,6 @@
         }
 
         &-bg {
-            opacity: 0.5;
             position: absolute;
             top: 0;
             left: 0;
@@ -23,8 +22,8 @@
             height: 100%;
             object-fit: cover;
             z-index: 16;
+            background-color: #fff;
         }
-        background-color: #868686;
     }
 
     &__handlers {
@@ -36,7 +35,7 @@
         .handler {
             &__list {
                 height: 100%;
-                max-width: 432px;
+                max-width: 315px;
                 margin: 0 auto;
                 position: relative;
             }
@@ -98,13 +97,13 @@
             }
 
             &-fixation {
-                left: 56px;
-                top: 78px;
+                left: 30px;
+                top: 30px;
             }
 
             &-color {
-                left: 327px;
-                top: 178px;
+                left: 270px;
+                top: 180px;
 
                 &-label {
                     font: {
@@ -133,12 +132,12 @@
             }
 
             &-height {
-                left: 24px;
+                left: 30px;
                 top: 345px;
             }
 
             &-width {
-                left: 160px;
+                left: 240px;
                 top: 545px;
             }
         }

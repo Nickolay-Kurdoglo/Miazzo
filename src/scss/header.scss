@@ -211,7 +211,7 @@
                 width: 160px;
                 padding: 12px;
                 border-radius: 8px;
-             
+
                 span {
                     font-weight: 600 !important;
                 }
@@ -219,10 +219,10 @@
 
                 &:hover {
                     background-color: #F0F0F0;
-
-                    &~.catalog__categories-list {
-                        visibility: visible;
-                    }
+                }
+                
+                &~.catalog__categories-list.active {
+                    visibility: visible;
                 }
 
                 .icon {

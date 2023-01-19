@@ -58,6 +58,8 @@ export class HeaderComponent extends Component {
 
         const $catalogList = this.$el.querySelector(".catalog__list");
         const $catalogItems = Array.from($catalogList.querySelectorAll(".catalog__item"));
+        const $catalogTitleList = Array.from($catalogList.querySelectorAll(".catalog__title"));
+        const $subcategories = Array.from($catalogList.querySelectorAll(".catalog__categories-list"));
 
         $catalogItems.forEach((item, index) => {
             item.addEventListener("click", () => {
@@ -71,7 +73,14 @@ export class HeaderComponent extends Component {
             });
         });
 
-
+        if (window.innerWidth >= 800) {
+            $catalogTitleList.forEach((item, index) => {
+                item.addEventListener('mouseover', () => {
+                    $subcategories.forEach(i => this.removeClass(i, 'active'));
+                    this.addClass($subcategories[index], 'active')
+                });
+            });
+        }
 
     }
 }

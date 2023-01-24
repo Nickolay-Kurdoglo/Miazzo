@@ -148,11 +148,10 @@
         order: 2;
         background-color: #fff;
 
-        .wrapper {
+        >.wrapper {
             padding: 10px 0;
             display: flex;
             align-items: center;
-            position: relative;
         }
 
         .nav {
@@ -178,21 +177,13 @@
         }
 
         .catalog {
-            display: none;
-            overflow: hidden;
-            position: absolute;
-            padding: 8px;
-            top: 84px;
-            left: 0;
-            z-index: 1500;
-            min-width: 736px;
-            max-width: 836px;
-            height: 392px;
-            background-color: #fff;
-            border-radius: 16px;
 
-            &.active {
-                display: block;
+            &__list {
+                display: flex;
+            }
+
+            &__item {
+                position: relative;
             }
 
             a {
@@ -208,19 +199,18 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 160px;
                 padding: 12px;
                 border-radius: 8px;
 
                 span {
                     font-weight: 600 !important;
                 }
-                
+
 
                 &:hover {
                     background-color: #F0F0F0;
                 }
-                
+
                 &~.catalog__categories-list.active {
                     visibility: visible;
                 }
@@ -232,16 +222,15 @@
 
             &__categories {
                 &-list {
-                    display: flex;
+                    padding: 4px;
+                    border-radius: 0 0 10px 10px;
                     visibility: hidden;
                     position: absolute;
-                    top: 8px;
-                    left: 168px;
-                    right: 8px;
-                    
-                    flex-flow: column wrap;
+                    top: 40px;
+                    left: 0;
+                    background-color: #fff;
+
                     max-height: 416px;
-                    gap: 8px;
 
                     &:hover {
                         visibility: visible;
@@ -249,6 +238,7 @@
                 }
 
                 &-item {
+                    min-width: 100px;
 
                     a {
                         border-radius: 8px;
@@ -279,13 +269,58 @@
     // Sidebbar 
 
     &__sidebar {
-        height: 182px;
+        height: 160px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         .js-close-header {
             display: none;
+        }
+    }
+
+    @media screen and (min-width: 801px) {
+        &__catalog {
+            position: absolute;
+            padding: 4px 0;
+            top: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            z-index: 60;
+            background-color: #fff;
+
+            .catalog {
+                &__item {
+                    flex: 1 1 auto;
+                }
+
+                &__title:hover~.catalog__categories-list {
+                    visibility: visible;
+                }
+
+                &__categories {
+                    &-list {
+                        display: inline-grid;
+                        grid-auto-flow: column;
+                        grid-template-rows: repeat(9, auto);        
+                        
+                        &.middle {
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                        &.left {
+                            right: 0;
+                            left: auto;
+                        }
+                    }
+                }
+            }
+
+
+            .wrapper {
+                position: relative;
+            }
         }
     }
 
@@ -489,6 +524,11 @@
                 height: auto;
                 display: block;
 
+                &__list {
+                    flex-direction: column;
+                    
+                }
+
                 &__title {
                     &:hover {
                         background: none;
@@ -545,6 +585,8 @@
                     &-list {
                         display: flex;
                         position: initial;
+                        flex-flow: column wrap;
+                        max-height: 330px;
                         padding: 8px;
                     }
 

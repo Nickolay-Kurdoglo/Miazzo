@@ -1,7 +1,7 @@
 import { Component } from "./component.js";
 
 export class HeaderComponent extends Component {
-    constructor (element) {
+    constructor(element) {
         super(element)
     }
 
@@ -24,7 +24,7 @@ export class HeaderComponent extends Component {
         const $burgerMenu = this.$el.querySelector(".header__burger");
         const $sidebar = this.$el.querySelector(".header__sidebar");
         const $overlay = this.$el.querySelector(".header__overlay");
-        
+
         $closeSidebar.addEventListener("click", () => {
             this.removeClass($sidebar, "active");
             this.removeClass($overlay, "active");
@@ -32,7 +32,7 @@ export class HeaderComponent extends Component {
 
         });
 
-        
+
         $overlay.addEventListener("click", () => {
             this.removeClass($sidebar, "active");
             this.removeClass($overlay, "active");
@@ -48,13 +48,9 @@ export class HeaderComponent extends Component {
 
 
         // catalog
-        
+
         const $catalogBtn = this.$el.querySelector(".js-catalog");
         const $catalog = this.$el.querySelector(".header__catalog .catalog")
-
-        $catalogBtn.addEventListener("click", () => {
-            $catalog.classList.toggle("active");
-        });
 
         const $catalogList = this.$el.querySelector(".catalog__list");
         const $catalogItems = Array.from($catalogList.querySelectorAll(".catalog__item"));
@@ -63,7 +59,7 @@ export class HeaderComponent extends Component {
 
         $catalogItems.forEach((item, index) => {
             item.addEventListener("click", () => {
-                if (item.classList.contains("active")) { 
+                if (item.classList.contains("active")) {
                     this.removeClass(item, "active");
                 }
                 else {
@@ -73,14 +69,24 @@ export class HeaderComponent extends Component {
             });
         });
 
-        if (window.innerWidth >= 800) {
-            $catalogTitleList.forEach((item, index) => {
-                item.addEventListener('mouseover', () => {
-                    $subcategories.forEach(i => this.removeClass(i, 'active'));
-                    this.addClass($subcategories[index], 'active')
-                });
-            });
-        }
+        // if (window.innerWidth >= 800) {
+        //     $catalogTitleList.forEach((item, index) => {
+        //         item.addEventListener('mouseover', () => {
+        //             $subcategories.forEach(i => this.removeClass(i, 'active'));
+        //             this.addClass($subcategories[index], 'active');
+        //         });
+        //     });
+        // }
+
+
+
+        $catalogTitleList.forEach((el, index) => {
+            if (Math.floor($catalogTitleList.length / 3) <= index && Math.floor($catalogTitleList.length * 0.66) >= index) {
+                this.addClass(el.nextElementSibling, 'middle')
+            } else if (index >= Math.floor($catalogTitleList.length * 0.66)) {
+                this.addClass(el.nextElementSibling, 'left')
+            }
+        });
 
     }
-}
+} 
